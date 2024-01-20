@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import styles from "./page.module.css";
-import { Open_Sans } from "next/font/google";
+import { Lato } from "next/font/google";
+import "./home.css";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const lato = Lato({ weight: ["400", "900"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SoftwareSam - Sam F-Harrison",
-  description: "Designed and built by Sam F-Harrison",
+  title: "Sam F-Harrison",
+  description: "Carefully crafted by me for you.",
 };
 
 export default function RootLayout({
@@ -16,10 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={openSans.className}>
-        <main className={styles.main}>{children}</main>
-      </body>
+    <html lang="en" className={lato.className}>
+      <body>{children}</body>
     </html>
   );
 }
