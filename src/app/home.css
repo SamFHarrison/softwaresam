@@ -1,0 +1,20 @@
+* {
+  padding: none;
+  margin: none;
+}
+
+body {
+  background-image: url("../../public/imgs/swirl-bg.png");
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #050b10 19.49%, #17507e 100%);
+}
