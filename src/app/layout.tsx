@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./home.css";
+import Navbar from "@/components/Navbar/Navbar";
 
-const lato = Lato({ weight: ["400", "900"], subsets: ["latin"] });
+const lato = Lato({ weight: ["100", "300", "400", "900"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sam F-Harrison",
@@ -16,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={lato.className}>
-      <body>{children}</body>
+      <body>
+        <header>
+          <Navbar />
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
