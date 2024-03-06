@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
 import "./home.css";
 import Navbar from "@/components/Navbar/Navbar";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
-const lato = Lato({
-  weight: ["100", "300", "400", "700", "900"],
-  subsets: ["latin"],
-});
+// const lato = Lato({
+//   weight: ["100", "300", "400", "700", "900"],
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Sam F-Harrison",
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={lato.className}>
+    <html lang="en" className={GeistSans.className}>
       <body>
         <header>
           <Navbar />

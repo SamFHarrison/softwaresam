@@ -26,7 +26,7 @@ export default function Navbar() {
             <motion.span
               layoutId="hi"
               className="motion"
-              transition={{ duration: 0.5, type: "spring" }}
+              transition={{ duration: 0.7, type: "spring" }}
             />
           )}
           {tab.label}
