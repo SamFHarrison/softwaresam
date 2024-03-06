@@ -8,9 +8,15 @@
 body {
   background-image: url("../../public/imgs/swirl-bg.png");
   background-repeat: no-repeat;
-  background-color: #17507e;
+  background-color: #63caf2;
   background-blend-mode: multiply;
+  background-size: 1280px;
+  background-position-x: 50%;
   color: var(--font-primary);
+
+  @media (min-width: 1280px) {
+    background-size: 2560px;
+  }
 }
 
 header {

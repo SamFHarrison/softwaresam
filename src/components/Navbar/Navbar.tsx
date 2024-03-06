@@ -1,13 +1,37 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import clsx from "clsx";
 import "./Navbar.css";
 
-function Navbar() {
+const tabs = [
+  { id: "projects", label: "Projects" },
+  { id: "home", label: "Home" },
+  { id: "articles", label: "Articles" },
+];
+
+export default function Navbar() {
+  const [activeTab, setActiveTab] = useState(tabs[1].id);
+
   return (
-    <div className="navbar-pill-container">
-      <button className="pill selected">Home</button>
-      <button className="pill">Blog</button>
+    <div className="pill">
+      {tabs.map((tab) => (
+        <button
+          key={tab.id}
+          onClick={() => setActiveTab(tab.id)}
+          className={clsx(activeTab === tab.id ? "" : "tab-active", "tab")}
+        >
+          {activeTab === tab.id && (
+            <motion.span
+              layoutId="hi"
+              className="motion"
+              transition={{ duration: 0.5, type: "spring" }}
+            />
+          )}
+          {tab.label}
+        </button>
+      ))}
     </div>
   );
 }
-
-export default Navbar;
