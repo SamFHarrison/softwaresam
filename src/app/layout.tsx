@@ -4,11 +4,6 @@ import Navbar from "@/components/Navbar/Navbar";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
-// const lato = Lato({
-//   weight: ["100", "300", "400", "700", "900"],
-//   subsets: ["latin"],
-// });
-
 export const metadata: Metadata = {
   title: "Sam F-Harrison",
   description: "Carefully crafted by me for you.",
