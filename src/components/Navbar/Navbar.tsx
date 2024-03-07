@@ -24,7 +24,7 @@ export default function Navbar() {
         >
           {activeTab === tab.id && (
             <motion.span
-              layoutId="hi"
+              layoutId="active-tab-bubble"
               className="motion"
               transition={{ duration: 0.7, type: "spring" }}
             />
