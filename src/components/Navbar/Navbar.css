@@ -3,8 +3,12 @@ div.pill {
   gap: 2px;
   background-color: #1c1c1e;
   border-radius: 28px;
-  padding: 4px;
+  padding: 8px;
   margin: 12px;
+
+  @media (max-width: 450px) {
+    padding: 6px;
+  }
 }
 
 button.tab {
@@ -19,6 +23,10 @@ button.tab {
 
   &:focus-visible {
     outline: 2px solid black;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 1rem;
   }
 }
 
