@@ -9,16 +9,50 @@
 body {
   background-image: url("../../public/imgs/swirl-bg.png");
   background-repeat: no-repeat;
-  background-color: #63caf2;
+  background-color: #2a8cb3;
   background-blend-mode: multiply;
   background-size: 2560px;
   background-position-x: 50%;
-  color: var(--font-primary);
+  color: var(--white-primary);
 }
 
 header {
   width: 100vw;
-  height: auto;
+  height: 15vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+div.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  height: 75vh;
+}
+
+div.hero-title {
+  h1 {
+    font-size: 172px;
+    line-height: 90%;
+  }
+  h1.orange {
+    color: var(--font-orange);
+  }
+}
+
+.ai-sam {
+  width: 50vw;
+  height: 60vh;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
 }
