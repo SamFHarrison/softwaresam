@@ -1,3 +1,5 @@
+import AISam from "@/components/AISam/AISam";
+
 export default function Home() {
   return (
     <div className="home-wrapper">
@@ -6,7 +8,7 @@ export default function Home() {
         <h1>I&apos;m</h1>
         <h1 className="orange">Sam</h1>
       </div>
-      <div className="ai-sam"></div>
+      <AISam />
     </div>
   );
 }
