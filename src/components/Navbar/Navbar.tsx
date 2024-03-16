@@ -5,21 +5,22 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import "./Navbar.css";
 import { useRouter } from "next/navigation";
+import { RoutePaths } from "@/constants/constants";
 
-const tabs = [
-  { id: "projects", label: "Projects", path: "/projects" },
-  { id: "home", label: "Home", path: "/" },
-  { id: "articles", label: "Articles", path: "/articles" },
+export const NavTabs = [
+  { id: "projects", label: "Projects", path: RoutePaths.Projects },
+  { id: "home", label: "Home", path: RoutePaths.Home },
+  { id: "articles", label: "Articles", path: RoutePaths.Articles },
 ];
 
 export default function Navbar() {
-  const [activeTab, setActiveTab] = useState(tabs[1].id);
+  const [activeTab, setActiveTab] = useState(NavTabs[1].id);
 
   const router = useRouter();
 
   return (
     <nav className="pill">
-      {tabs.map((tab) => (
+      {NavTabs.map((tab) => (
         <button
           key={tab.id}
           onClick={() => {
