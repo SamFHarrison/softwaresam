@@ -13,8 +13,8 @@
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
@@ -33,22 +33,20 @@
   input {
     height: 35px;
     width: 100%;
-    padding: 6px;
+    padding: 12px;
 
     background-color: transparent;
     border: none;
     color: var(--white-primary);
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 100;
 
     &:focus-visible {
       outline: none;
     }
 
     &::placeholder {
-      /* font-family: ; */
-      color: var(--font-orange);
-      opacity: 0.6;
+      font-family: var(--font-ds);
     }
   }
 
