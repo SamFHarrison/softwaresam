@@ -1,12 +1,12 @@
 import React from "react";
 import "./AISam.css";
-import Arrow from "@/assets/Icons";
+import { Arrow } from "@/assets/Icons";
 import Image from "next/image";
 import avatar from "@/../public/imgs/avatar.png";
 
 function AISam() {
   return (
-    <div className="glass-screen">
+    <div className="container glass-effect">
       <div className="ai-sam-placeholder">
         <Image src={avatar} alt="Sam's avatar" />
         <h2>AISam</h2>

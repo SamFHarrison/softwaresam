@@ -1,4 +1,4 @@
-.glass-screen {
+.container {
   width: 600px;
   height: 600px;
   padding: 15px;
@@ -9,16 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
-  );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 
   div.ai-sam-placeholder {
     height: 100%;
