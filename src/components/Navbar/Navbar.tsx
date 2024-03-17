@@ -27,7 +27,7 @@ export default function Navbar() {
             setActiveTab(tab.id);
             router.push(tab.path);
           }}
-          className={clsx(activeTab === tab.id ? "" : "tab-active", "tab")}
+          className={clsx(activeTab === tab.id ? "tab-active" : "", "tab")}
         >
           {activeTab === tab.id && (
             <motion.span
