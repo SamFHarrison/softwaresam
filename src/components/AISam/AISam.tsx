@@ -10,7 +10,7 @@ function AISam() {
       <div className="ai-sam-placeholder">
         <Image src={avatar} alt="Sam's avatar" />
         <h2>AISam</h2>
-        <p>Coming June 24</p>
+        <p>Coming June &apos;24</p>
       </div>
 
       {/* <div className="input-wrapper">

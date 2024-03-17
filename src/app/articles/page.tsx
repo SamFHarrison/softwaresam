@@ -1,7 +1,7 @@
 import React from "react";
 
 function ArticlePage() {
-  return <div>ArticlePage</div>;
+  return <section className="articles"></section>;
 }
 
 export default ArticlePage;
