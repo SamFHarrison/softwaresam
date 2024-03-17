@@ -13,7 +13,7 @@ div.hero-title {
     font-size: 172px;
     line-height: 90%;
   }
-  h1.orange {
+  span.orange {
     color: var(--orange);
   }
 }

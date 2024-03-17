@@ -1,10 +1,14 @@
-# Welcome to `SoftwareSam.tech`
+# Welcome to my personal site
 
-This is technically v2 of my website, v1 is still live on the `www.softwaresam.tech` domain while I develop v2 on this repo.
+## History
+
+This will be the second personal site I make. My first site I made with vanilla HTML, CSS and JS back in 2022, before I even became a professional software developer, and hosted it for a while on the `softwaresam.tech` domain. I don't host the site anymore but you can run it locally from the [repo](https://github.com/SamFHarrison/softwaresam.tech) if you want to see it.
+
+## New Design
+
+This will be my first time using and learning the [Next.js](https://nextjs.org/) framework and CI/CD pipleine.
 
 ## Getting started with the repo
-
-This is a [Next.js](https://nextjs.org/) project.
 
 First, run the development server:
 
@@ -17,12 +21,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
