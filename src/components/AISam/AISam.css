@@ -3,6 +3,8 @@
   height: 600px;
   padding: 15px;
   border-radius: 30px;
+  position: relative;
+  overflow: hidden;
 
   display: flex;
   flex-direction: column;
@@ -17,60 +19,81 @@
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-}
 
-.input-wrapper {
-  width: 100%;
-  border-radius: 20px;
-  padding: 6px;
-
-  display: flex;
-  justify-content: space-between;
-
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-
-  input {
-    height: 35px;
+  div.ai-sam-placeholder {
+    height: 100%;
     width: 100%;
-    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
 
-    background-color: transparent;
-    border: none;
-    color: var(--white-primary);
-    font-size: 1.1rem;
-    font-weight: 100;
-
-    &:focus-visible {
-      outline: none;
+    img {
+      margin-bottom: 16px;
     }
 
-    &::placeholder {
-      font-family: var(--font-ds);
+    p {
+      font-size: 1rem;
+      color: var(--orange);
     }
   }
 
-  button.send-button {
-    width: 35px;
-    height: 35px;
-    border-radius: 14px;
+  .input-wrapper {
+    width: 100%;
+    border-radius: 20px;
+    padding: 6px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 
-    background-color: transparent;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 
-    transition: all 150ms ease-in-out;
+    input {
+      height: 35px;
+      width: 100%;
+      padding: 12px;
 
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: transparent;
+      border: none;
+      color: var(--white-primary);
+      font-size: 1.1rem;
+      font-weight: 100;
+
+      &:focus-visible {
+        outline: none;
+      }
+
+      &::placeholder {
+        font-family: var(--font-ds);
+      }
     }
 
-    svg {
-      height: 20px;
-      width: 20px;
+    button.send-button {
+      width: 35px;
+      height: 35px;
+      border-radius: 14px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: transparent;
+      border: none;
+
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      svg {
+        height: 20px;
+        width: 20px;
+      }
     }
   }
 }
