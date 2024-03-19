@@ -1,0 +1,50 @@
+.articles-container {
+  margin: 0 5vw 5vw;
+  height: 75vh;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+
+  .side-bar {
+    width: 300px;
+    height: 100%;
+    display: flex;
+
+    ul {
+      list-style: none;
+      width: 100%;
+
+      li {
+        padding: 16px;
+        margin: 8px;
+        border-radius: 17px;
+        border: 1px solid transparent;
+        background: transparent;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+          background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0)
+          );
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+
+    .search-input-wrapper {
+      display: flex;
+    }
+  }
+
+  .divider {
+    height: 80%;
+    width: 1px;
+    position: relative;
+    top: 10%;
+    margin: 0px 8px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
