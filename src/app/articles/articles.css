@@ -4,6 +4,7 @@
   border-radius: 25px;
   display: flex;
   align-items: center;
+  padding: 8px;
 
   .side-bar {
     width: 300px;
@@ -16,7 +17,6 @@
 
       li {
         padding: 16px;
-        margin: 8px;
         border-radius: 17px;
         border: 1px solid transparent;
         background: transparent;
@@ -30,6 +30,15 @@
           );
           border: 1px solid rgba(255, 255, 255, 0.2);
         }
+
+        .title {
+          font-size: 1.2rem;
+        }
+
+        .date {
+          font-size: 0.8rem;
+          opacity: 0.4;
+        }
       }
     }
 
@@ -41,10 +50,16 @@
   .divider {
     height: 80%;
     width: 1px;
-    position: relative;
-    top: 10%;
+    /* position: relative; */
+    /* top: 10%; */
     margin: 0px 8px;
 
     background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .article-post {
+    height: 100%;
+    width: 100%;
+    display: block;
   }
 }

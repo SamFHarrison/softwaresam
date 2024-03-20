@@ -14,12 +14,15 @@ function Article() {
         {/* // TODO: Search, Filter + Sort Feature */}
         <ul className="article-sidebar">
           <li onClick={() => router.push(RoutePaths.Articles)}>
-            <p className="">Article Title</p>
-            <p className="description">10th March &apos;24</p>
+            <p className="title">Article Title</p>
+            <p className="date">10th March &apos;24</p>
+            {/* // TODO: Notification indicator  */}
           </li>
         </ul>
-        <div className="divider" />
-        <div className="article-post">Hi Im an article</div>
+      </div>
+      <div className="divider" />
+      <div className="article-post">
+        <h1>Hi Im an article</h1>
       </div>
     </section>
   );

@@ -32,7 +32,21 @@ header {
   align-items: center;
 }
 
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+
 /* Utility Classes */
+
+.orange {
+  color: var(--orange);
+}
 
 .glass-effect {
   background: linear-gradient(
