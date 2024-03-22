@@ -60,5 +60,6 @@
     display: block;
     overflow-y: scroll;
     margin: 0 8px;
+    padding: 16px 64px;
   }
 }
