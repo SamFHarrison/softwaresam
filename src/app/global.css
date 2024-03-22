@@ -1,6 +1,7 @@
 :root {
   --white: #f5f5f5;
   --dark-gray: #1c1c1e;
+  --light-transparent-grey: rgba(255, 255, 255, 0.2);
 
   --orange: #ff652f;
 
@@ -42,6 +43,15 @@ h3 {
   font-size: 24px;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--light-transparent-grey);
+  border-radius: 5px;
+}
+
 /* Utility Classes */
 
 .orange {
@@ -56,6 +66,6 @@ h3 {
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--light-transparent-grey);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }

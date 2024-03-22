@@ -28,7 +28,7 @@
             rgba(255, 255, 255, 0.1),
             rgba(255, 255, 255, 0)
           );
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid var(--light-transparent-grey);
         }
 
         .title {
@@ -50,16 +50,15 @@
   .divider {
     height: 80%;
     width: 1px;
-    /* position: relative; */
-    /* top: 10%; */
-    margin: 0px 8px;
-
-    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 8px;
+    background-color: var(--light-transparent-grey);
   }
 
   .article-post {
     height: 100%;
     width: 100%;
     display: block;
+    overflow-y: scroll;
+    margin: 0 8px;
   }
 }
