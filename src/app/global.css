@@ -3,6 +3,8 @@
   --dark-gray: #1c1c1e;
   --light-transparent-grey: rgba(255, 255, 255, 0.2);
 
+  --teal: rgba(42, 140, 179, 1);
+
   --orange: #ff652f;
 
   --transition: all 200ms ease-in-out;
@@ -18,7 +20,7 @@
 body {
   background-image: url("../../public/imgs/swirl-bg.png");
   background-repeat: no-repeat;
-  background-color: #2a8cb3;
+  background-color: var(--teal);
   background-blend-mode: multiply;
   background-size: 2560px;
   background-position-x: 50%;
