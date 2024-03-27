@@ -1,6 +1,7 @@
 import { RoutePaths } from "@/constants/constants";
 import { useRouter } from "next/navigation";
 import React from "react";
+import "./ArticleSnippet.css";
 
 interface ArticleSnippetProps {
   title: string;
